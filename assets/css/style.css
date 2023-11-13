@@ -1,0 +1,73 @@
+
+/*import das fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+/* Reset css*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+body{
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 18px;
+}
+
+.container{
+    width: 600px;
+}
+
+
+.content{
+    width: 100%;
+    background-color: hsl(252, 100%, 67%);
+
+    
+}
+
+p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 50%;
+    
+}
+
+.result{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+/* mobile first */
+@media screen and (max-width: 375px) {
+    .container{
+        width: 375px;
+        height: 450px;
+        background-color: aquamarine;
+    }
+    .content{
+
+        align-items: center;
+        justify-content: center;
+        background-color: hsl(252, 100%, 67%);
+        border-radius: 0 0 2rem 2rem;
+    }
+    p{
+        font-size: 500;
+    }
+    
+}
+
