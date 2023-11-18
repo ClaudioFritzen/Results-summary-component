@@ -15,59 +15,81 @@
 body{
     font-family: 'Hanken Grotesk', sans-serif;
     font-size: 18px;
+    color: white;
+    
 }
 
 .container{
     width: 600px;
-}
-
-
-.content{
-    width: 100%;
-    background-color: hsl(252, 100%, 67%);
-
+    height: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
     
 }
 
-p{
+.content{
+    width: 500px;
+    height: 600px;
     display: flex;
+    flex-direction:column;
     align-items: center;
     justify-content: center;
-    max-width: 50%;
+    
+    background: hsl(252, 100%, 67%);
+    background: linear-gradient(180deg, rgba(103,67,255,1) 0%, hsl(241, 81%, 54%));
     
 }
 
 .result{
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsla(256, 72%, 46%, 1);
+    border-radius: 5rem;    
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+    width: 350px;
+
+}
+
+.red{
+    background-color:hsl(0, 77%, 65%);
+    width: 350px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
-
-
-
-
-
-
-
-
-/* mobile first */
-@media screen and (max-width: 375px) {
-    .container{
-        width: 375px;
-        height: 450px;
-        background-color: aquamarine;
-    }
-    .content{
-
-        align-items: center;
-        justify-content: center;
-        background-color: hsl(252, 100%, 67%);
-        border-radius: 0 0 2rem 2rem;
-    }
-    p{
-        font-size: 500;
-    }
-    
+.yellow{
+    background-color:hsl(39, 100%, 56%);
+    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
+.green{
+    background-color: hsl(166, 100%, 37%);
+    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.blue{
+    background-color:hsl(234, 85%, 45%);
+    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
